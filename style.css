@@ -224,3 +224,38 @@ body {
   color: #000000;
   text-decoration: none;
 }
+/* ======================== */
+/* 7. MEDIA QUERY (PENYESUAIAN KHUSUS HP) */
+/* ======================== */
+
+/* Aturan ini akan diterapkan hanya pada layar dengan lebar maksimal 450px (semua ponsel) */
+@media (max-width: 450px) {
+  /* --- Penyesuaian Tombol CTA (ORDER) --- */
+  .button {
+    /* Mengurangi padding vertikal (atas/bawah) dari 16px menjadi 14px */
+    padding: 14px;
+    /* Mengurangi ukuran font tombol dari 1.1em menjadi 1.0em */
+    font-size: 1em;
+    /* Mengurangi jarak margin vertikal antar tombol */
+    margin: 10px 0;
+  }
+
+  /* --- Penyesuaian Tombol Tersier (Google Drive) --- */
+  .tertiary {
+    /* Mengurangi padding vertikal (atas/bawah) dari 12px menjadi 10px */
+    padding: 10px;
+    /* Mengurangi ukuran font dari 0.9em menjadi 0.8em */
+    font-size: 0.8em;
+  }
+
+  /* --- Penyesuaian Teks Utama --- */
+  h1 {
+    /* Mengurangi ukuran judul nama bisnis */
+    font-size: 1.7em;
+  }
+
+  /* Mengurangi ukuran font deskripsi */
+  header p {
+    font-size: 0.9em;
+  }
+}
