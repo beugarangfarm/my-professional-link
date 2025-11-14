@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasa Bisnis | Link Bio Profesional</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="ASSETS/LOGO/logobisnis.jpg"
+          alt="Foto Profil Bisnis"
+          class="profile-img"
+        />
+        <h1>BEUGARANG FARM</h1>
+        <p>
+          Tersedia Ayam Shamo Kualitas Impor dan Jasa Desain Logo Profesional &
+          Cincin Kaki Ayam Custom. Siap wujudkan ide terbaik Anda!
+        </p>
+
+        <div class="social-links-header">
+          <a
+            href="https://wa.me/6283856285550"
+            target="_blank"
+            aria-label="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a
+            href="https://facebook.com/rajulbf"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://tiktok.com/@beugarangfarm"
+            target="_blank"
+            aria-label="TikTok"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+        </div>
+      </header>
+
+      <main class="buttons-section">
+        <a
+          href="https://wa.me/6283856285550?text=Halo%2C%20saya%20tertarik%20untuk%20ORDER%20AYAM%20yang%20ada%20di%20link%20bio%20anda."
+          target="_blank"
+          class="button primary-priority"
+        >
+          🐔 ORDER AYAM SHAMO SEKARANG
+        </a>
+
+        <a
+          href="https://wa.me/6283856285550?text=Halo%2C%20saya%20tertarik%20untuk%20ORDER%20RING%20KAKI%20AYAM%20yang%20ada%20di%20link%20bio%20anda."
+          target="_blank"
+          class="button primary"
+        >
+          💍 ORDER RING KAKI AYAM SEKARANG
+        </a>
+
+        <a
+          href="https://wa.me/6283856285550?text=Halo%2C%20saya%20tertarik%20untuk%20ORDER%20LOGO%20yang%20ada%20di%20link%20bio%20anda."
+          target="_blank"
+          class="button secondary"
+        >
+          🎨 ORDER LOGO SEKARANG
+        </a>
+      </main>
+
+      <section class="portfolio-section" id="logo-gallery">
+        <h2>— Contoh Terbaru Logo —</h2>
+        <div class="gallery">
+          <img src="assets/images/logo-ex-1.jpg" alt="Contoh Logo 1" />
+          <img src="assets/images/logo-ex-2.jpg" alt="Contoh Logo 2" />
+          <img src="assets/images/logo-ex-3.jpg" alt="Contoh Logo 3" />
+          <img src="assets/images/logo-ex-4.jpg" alt="Contoh Logo 4" />
+        </div>
+      </section>
+
+      <section class="portfolio-section" id="ring-gallery">
+        <h2>— Contoh Ring Kaki Ayam —</h2>
+        <div class="gallery">
+          <img src="assets/images/ring-ex-1.jpg" alt= >
+          <img src="assets/images/ring-ex-2.jpg" alt="Contoh Ring 2" />
+          <img src="assets/images/ring-ex-3.jpg" alt="Contoh Ring 3" />
+          <img src="assets/images/ring-ex-4.jpg" alt="Contoh Ring 4" />
+        </div>
+      </section>
+
+      <section class="link-drive-section">
+        <a href="#LINK_GDRIVE_ALL" target="_blank" class="button tertiary">
+          Lihat Semua Portofolio (Logo & Ring) di Google Drive
+        </a>
+      </section>
+
+      <div id="imageModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" />
+      </div>
+
+      <footer>
+        <p class="copyright">
+          &copy; 2025 BEUGARANG FARM. All rights reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      var modal = document.getElementById("imageModal");
+      var modalImg = document.getElementById("modalImage");
+      var galleryImages = document.querySelectorAll(".gallery img");
+
+      galleryImages.forEach((img) => {
+        img.onclick = function () {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+        };
+      });
+
+      function closeModal() {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          closeModal();
+        }
+      };
+    </script>
+  </body>
+</html>
