@@ -68,7 +68,10 @@ body {
   border-radius: 12px;
   font-weight: 600;
   font-size: 1.1em;
-  transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+  transition:
+    background-color 0.3s,
+    transform 0.1s,
+    box-shadow 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
